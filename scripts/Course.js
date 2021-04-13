@@ -4,7 +4,6 @@ var Course = /** @class */ (function () {
         this.credits = credits;
         this.professor = professor;
     }
-
     return Course;
 }());
 export {Course};
