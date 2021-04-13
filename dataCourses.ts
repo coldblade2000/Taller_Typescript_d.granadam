@@ -1,4 +1,4 @@
-import {Course} from "./Course";
+import {Course} from "./Course.js";
 
 export const dataCourses = [
     new Course('Desarrollo SW', 3, 'Cesar Forero'),

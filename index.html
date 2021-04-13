@@ -6,6 +6,7 @@
     <title>Taller 1</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <style>
         tr > td, tr > th {
             padding: 8px;
@@ -78,8 +79,10 @@
 <div class="container bg-light h-100 p-5">
     <div class="col-sm-12 row d-flex flex-column align-items-center">
         <h1 class="font-weight-bold">Diego Granada</h1>
+
         <img src="https://scontent.fbog4-1.fna.fbcdn.net/v/t1.6435-9/46137504_2131229633595661_9138169935925608448_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeFKBXS-iDPXzBG-dmeCj7T4eN-11ctwy15437XVy3DLXuauEsAdERaUJBPttEwCt3cffQlkKSmnkgnMm6AvnpGh&_nc_ohc=gM5vIWFuhVUAX-OrdJK&_nc_ht=scontent.fbog4-1.fna&oh=06a537135f787db2b0d68065ca7ee625&oe=6099DFE6"
              height="300px" width="300px" alt="Avatar">
+
     </div>
     <div class="row">
         <div class="col-sm-12 col-md-6 p-4">
@@ -120,6 +123,18 @@
         <div class="col-sm-12 col-md-6 p-4">
             <div class="border p-4">
                 <h2>Cursos Actuales</h2>
+                <form style="margin:10px;">
+                    <div class="form-row">
+                        <div class="col">
+                            <input class="form-control" id="search-box" placeholder="Filtrar por nombre" type="text">
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-success" id="button-filterByName" type="button">Aplicar</button>
+                            <button class="btn btn-info" id="button-reset" type="button"><i
+                                    class="bi bi-arrow-counterclockwise text-white"></i></button>
+                        </div>
+                    </div>
+                </form>
                 <table class="p-4 m-3 w-100 tableContent">
                     <thead class="bg-primary text-light">
                     <tr class="border-bottom ">
@@ -129,23 +144,26 @@
                     </tr>
                     </thead>
                     <tbody id="cursos">
-                       <!-- <tr class="border-bottom ">
-                            <td>Desarrollo SW</td>
-                            <td>Cesar Forero</td>
-                        </tr>
-                        <tr class="border-bottom ">
-                            <td>DALGO</td>
-                            <td>Duitama</td>
-                        </tr>
-                        <tr class="border-bottom ">
-                            <td>Sistrans</td>
-                            <td>Claudia :(</td>
-                        </tr>-->
+                    <!-- <tr class="border-bottom ">
+                         <td>Desarrollo SW</td>
+                         <td>Cesar Forero</td>
+                     </tr>
+                     <tr class="border-bottom ">
+                         <td>DALGO</td>
+                         <td>Duitama</td>
+                     </tr>
+                     <tr class="border-bottom ">
+                         <td>Sistrans</td>
+                         <td>Claudia :(</td>
+                     </tr>-->
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 </div>
+<script src="./scripts/Course.js" type="module"></script>
+<script src="./scripts/dataCourses.js" type="module"></script>
+<script src="./scripts/main.js" type="module"></script>
 </body>
 </html>
